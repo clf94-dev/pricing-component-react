@@ -1,5 +1,5 @@
 .pricing-section {
-  padding: 4% 7%;
+  padding: 2% 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,6 +107,7 @@
 }
 
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo .pricing-container-features li {
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }

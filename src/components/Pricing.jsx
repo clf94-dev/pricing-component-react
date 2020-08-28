@@ -55,7 +55,7 @@ export default function Pricing() {
                                     }</h2>
                                 <ul className="pricing-container-features light">
                                     <hr/>
-                                    <li>500GB Storage</li>
+                                    <li>500 GB Storage</li>
                                     <hr/>
                                     <li>2 Users Allowed</li>
                                     <hr/>
@@ -72,7 +72,7 @@ export default function Pricing() {
                                 <h2>{checked?'$249.99':'$24.99'}</h2>
                                 <ul className="pricing-container-features">
                                     <hr/>
-                                    <li>1TB Storage</li>
+                                    <li>1 TB Storage</li>
                                     <hr/>
                                     <li>5 Users Allowed</li>
                                     <hr/>
