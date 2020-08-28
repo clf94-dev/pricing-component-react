@@ -1,3 +1,11 @@
+$very-light-grayish-blue:hsl(240, 78%, 98%);
+$light-grayish-blue:hsl(234, 14%, 74%);
+$grayish-blue:#A2A7F0;
+$dark-grayish-blue:#696EDD;
+$text-color-dark:#4A4D60;
+$font-family:'Montserrat',
+sans-serif;
+$weight-bold:700;
 .pricing-section {
     padding: 4% 7%;
     display: flex;
@@ -10,20 +18,23 @@
         align-items: center;
         margin: 0 auto;
         .pricing-heading {
-            color: darkblue;
+            font-family: $font-family;
+            color: $grayish-blue;
         }
         .switch {
             margin: 10px auto 40px;
             justify-content: center !important;
             .options {
                 font-size: 20px;
-                color: gray;
+                color: $light-grayish-blue;
+                font-family: $font-family;
             }
         }
         .pricing-container {
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: $font-family;
             .pricing-container-card {
                 background: white;
                 box-shadow: 0 6px 20px gray;
@@ -33,8 +44,8 @@
                 border-radius: 10px;
                 &:nth-child(2) {
                     transform: scale(1.1);
-                    background: darkblue;
-                    color: white;
+                    background: linear-gradient( 90deg, $grayish-blue, $dark-grayish-blue);
+                    color: $very-light-grayish-blue;
                     z-index: 5;
                     &:hover {
                         transform: scale(1.11);
@@ -52,13 +63,18 @@
                     align-items: center !important;
                     & h3 {
                         font-size: 20px;
-                        color: gray;
                         margin-bottom: 10px;
+                        &.light {
+                            color: $text-color-dark;
+                        }
                     }
                     & h2 {
                         font-size: 80px;
                         margin-top: 20px;
                         margin-bottom: 20px;
+                        &.light {
+                            color: $text-color-dark;
+                        }
                     }
                     .pricing-container-features {
                         margin: 1% 2%;
@@ -67,8 +83,12 @@
                         padding-bottom: 30px;
                         display: flex;
                         flex-direction: column;
+                        &.light {
+                            color: $text-color-dark;
+                        }
                         & hr {
                             width: 100%;
+                            color: $very-light-grayish-blue;
                         }
                         & li {
                             margin-top: 10px;

@@ -14,7 +14,8 @@
 }
 
 .pricing-section .pricing-wrapper .pricing-heading {
-  color: darkblue;
+  font-family: "Montserrat", sans-serif;
+  color: #A2A7F0;
 }
 
 .pricing-section .pricing-wrapper .switch {
@@ -24,13 +25,15 @@
 
 .pricing-section .pricing-wrapper .switch .options {
   font-size: 20px;
-  color: gray;
+  color: #b3b5c6;
+  font-family: "Montserrat", sans-serif;
 }
 
 .pricing-section .pricing-wrapper .pricing-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card {
@@ -44,8 +47,8 @@
 
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card:nth-child(2) {
   transform: scale(1.1);
-  background: darkblue;
-  color: white;
+  background: linear-gradient(90deg, #A2A7F0, #696EDD);
+  color: #f6f6fe;
   z-index: 5;
 }
 
@@ -68,14 +71,21 @@
 
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo h3 {
   font-size: 20px;
-  color: gray;
   margin-bottom: 10px;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo h3.light {
+  color: #4A4D60;
 }
 
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo h2 {
   font-size: 80px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo h2.light {
+  color: #4A4D60;
 }
 
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo .pricing-container-features {
@@ -87,8 +97,13 @@
   flex-direction: column;
 }
 
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo .pricing-container-features.light {
+  color: #4A4D60;
+}
+
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo .pricing-container-features hr {
   width: 100%;
+  color: #f6f6fe;
 }
 
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo .pricing-container-features li {

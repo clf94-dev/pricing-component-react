@@ -19,7 +19,7 @@ export default function Pricing() {
             <div className="pricing-section">
                 <div className="pricing-wrapper">
                     <h1 className="pricing-heading">
-                        Pricing
+                        Our Pricing
                     </h1>
 
                     <Grid
@@ -47,13 +47,13 @@ export default function Pricing() {
                     }}>
                         <div className="pricing-container-card">
                             <div className="pricing-container-cardInfo">
-                                <h3>Basic</h3>
-                                <h2>{
+                                <h3 className='light'>Basic</h3>
+                                <h2 className='light'>{
                                      checked
                                             ? '$199.99'
                                             : '$19.99'
                                     }</h2>
-                                <ul className="pricing-container-features">
+                                <ul className="pricing-container-features light">
                                     <hr/>
                                     <li>500GB Storage</li>
                                     <hr/>
@@ -85,9 +85,9 @@ export default function Pricing() {
                         </div>
                         <div className="pricing-container-card">
                             <div className="pricing-container-cardInfo">
-                                <h3>Master</h3>
-                                <h2>{checked?'$399.99':'$39.99'}</h2>
-                                <ul className="pricing-container-features">
+                                <h3 className='light'>Master</h3>
+                                <h2 className='light'>{checked?'$399.99':'$39.99'}</h2>
+                                <ul className="pricing-container-features light">
                                     <hr/>
                                     <li>2 TB Storage</li>
                                     <hr/>
