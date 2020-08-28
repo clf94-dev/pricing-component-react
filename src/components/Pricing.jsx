@@ -16,17 +16,7 @@ function Pricing() {
                     <h1 className="pricing-heading">
                         Pricing
                     </h1>
-                    <FormControlLabel
-                        label="Monthly"
-                        control={< Switch checked = {
-                        checked
-                    }
-                    onClick = {
-                        handleClick
-                    }
-                    name = 'check' />}
-                        label="Yearly"/>
-
+              
                     <Grid component="label" container alignItems="center" spacing={1}>
                         <Grid item>Monthly</Grid>
                         <Grid item>
