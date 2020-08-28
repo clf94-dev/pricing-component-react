@@ -6,6 +6,10 @@ $text-color-dark:#4A4D60;
 $font-family:'Montserrat',
 sans-serif;
 $weight-bold:700;
+body {
+    background-color: $very-light-grayish-blue;
+}
+
 .pricing-section {
     padding: 2% 7%;
     display: flex;
@@ -19,7 +23,7 @@ $weight-bold:700;
         margin: 0 auto;
         .pricing-heading {
             font-family: $font-family;
-            color: $grayish-blue;
+            color: $text-color-dark;
         }
         .switch {
             margin: 10px auto 40px;

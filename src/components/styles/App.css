@@ -1,3 +1,7 @@
+body {
+  background-color: #f6f6fe;
+}
+
 .pricing-section {
   padding: 2% 7%;
   display: flex;
@@ -15,7 +19,7 @@
 
 .pricing-section .pricing-wrapper .pricing-heading {
   font-family: "Montserrat", sans-serif;
-  color: #A2A7F0;
+  color: #4A4D60;
 }
 
 .pricing-section .pricing-wrapper .switch {
