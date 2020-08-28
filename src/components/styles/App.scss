@@ -38,6 +38,36 @@
                     transform: scale(1.06);
                     transition: all 0.3s ease-out;
                 }
+                .pricing-container-cardInfo {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 5% 10%;
+                    height: 500px;
+                    align-items: center;
+                    & h3 {
+                        font-size: 20px;
+                        color: gray;
+                        margin-bottom: 10px;
+                    }
+                    & h2 {
+                        font-size: 80px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .pricing-container-features {
+                        margin: 1% 2%;
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        & hr {
+                            width: 100%;
+                        }
+                        & li {
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
             }
         }
     }
