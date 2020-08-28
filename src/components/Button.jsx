@@ -3,7 +3,7 @@ import './styles/button.css'
 
 
 const STYLES = ['btn--primary', 'btn--outline'];
-const SIZES = ['btn--medium', 'btn-large'];
+const SIZES = ['btn--medium', 'btn-large', 'btn--wide'];
 
 export const Button = ({
     children,

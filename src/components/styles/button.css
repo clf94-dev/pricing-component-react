@@ -47,3 +47,9 @@
     background-color: var(--primary);
     transition: 250ms;
 }
+
+.btn--wide {
+    padding: 12px 26px;
+    font-size: 24px !important;
+    width: 100%;
+}

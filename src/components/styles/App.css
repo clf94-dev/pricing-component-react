@@ -1,14 +1,15 @@
 .pricing-section {
-  padding: 5% 7%;
+  padding: 4% 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .pricing-section .pricing-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -16,7 +17,12 @@
   color: darkblue;
 }
 
-.pricing-section .pricing-wrapper .options {
+.pricing-section .pricing-wrapper .switch {
+  margin: 10px auto 40px;
+  justify-content: center !important;
+}
+
+.pricing-section .pricing-wrapper .switch .options {
   font-size: 20px;
   color: gray;
 }
@@ -30,7 +36,7 @@
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card {
   background: white;
   box-shadow: 0 6px 20px gray;
-  width: 300px;
+  width: 400px;
   height: 500px;
   text-decoration: none;
   border-radius: 10px;
@@ -54,9 +60,9 @@
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo {
   display: flex;
   flex-direction: column;
-  padding: 5% 10%;
+  padding: 5%;
   height: 500px;
-  align-items: center;
+  align-items: center !important;
 }
 
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo h3 {
@@ -74,6 +80,8 @@
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo .pricing-container-features {
   margin: 1% 2%;
   list-style: none;
+  padding-left: 0;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -85,4 +93,34 @@
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo .pricing-container-features li {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 756px) {
+  .pricing-wrapper {
+    margin: 0 20px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .pricing-wrapper .pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+  .pricing-wrapper .pricing-container-card {
+    width: 100%;
+  }
+  .pricing-wrapper .pricing-container-card:nth-child(2) {
+    transform: scale(1) !important;
+    margin: 30px;
+  }
+  .pricing-wrapper .pricing-container-card:nth-child(2):hover {
+    transform: none !important;
+  }
+  .pricing-wrapper .pricing-container-card:hover {
+    transform: none !important;
+  }
 }
