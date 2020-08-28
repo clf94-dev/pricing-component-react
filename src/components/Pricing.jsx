@@ -38,11 +38,21 @@ export default function Pricing() {
                         </Grid>
                         <Grid item className='options'>Yearly</Grid>
                     </Grid>
-                    <div className="pricing-container" style={{display: !checked   ? 'flex'   : 'none' }}>
+                    <div
+                        className="pricing-container"
+                        style={{
+                        display: !checked
+                            ? 'flex'
+                            : 'flex'
+                    }}>
                         <div className="pricing-container-card">
                             <div className="pricing-container-cardInfo">
                                 <h3>Basic</h3>
-                                <h2>$19.99</h2>
+                                <h2>{
+                                     checked
+                                            ? '$199.99'
+                                            : '$19.99'
+                                    }</h2>
                                 <ul className="pricing-container-features">
                                     <hr/>
                                     <li>500GB Storage</li>
@@ -59,7 +69,7 @@ export default function Pricing() {
                         <div className="pricing-container-card">
                             <div className="pricing-container-cardInfo">
                                 <h3>Professional</h3>
-                                <h2>$24.99</h2>
+                                <h2>{checked?'$249.99':'$24.99'}</h2>
                                 <ul className="pricing-container-features">
                                     <hr/>
                                     <li>1TB Storage</li>
@@ -76,7 +86,7 @@ export default function Pricing() {
                         <div className="pricing-container-card">
                             <div className="pricing-container-cardInfo">
                                 <h3>Master</h3>
-                                <h2>$39.99</h2>
+                                <h2>{checked?'$399.99':'$39.99'}</h2>
                                 <ul className="pricing-container-features">
                                     <hr/>
                                     <li>2 TB Storage</li>
@@ -92,60 +102,8 @@ export default function Pricing() {
                         </div>
                     </div>
 
-                    <div className="pricing-container" style={{display: checked   ? 'flex'   : 'none' }}>
-                        <div className="pricing-container-card">
-                            <div className="pricing-container-cardInfo">
-                                <h3>Basic</h3>
-                                <h2>$199.99</h2>
-                                <ul className="pricing-container-features">
-                                    <hr/>
-                                    <li>500GB Storage</li>
-                                    <hr/>
-                                    <li>2 Users Allowed</li>
-                                    <hr/>
-                                    <li>Send up to 3GB</li>
-                                </ul>
-                                <Button buttonSize='btn--wide' buttonStyle='btn--primary'>
-                                    More Info
-                                </Button>
-                            </div>
-                        </div >
-                        <div className="pricing-container-card">
-                            <div className="pricing-container-cardInfo">
-                                <h3>Professional</h3>
-                                <h2>$249.99</h2>
-                                <ul className="pricing-container-features">
-                                    <hr/>
-                                    <li>1TB Storage</li>
-                                    <hr/>
-                                    <li>5 Users Allowed</li>
-                                    <hr/>
-                                    <li>Send up to 10GB</li>
-                                </ul>
-                                <Button buttonSize='btn--wide' buttonStyle='btn--outline'>
-                                    More Info
-                                </Button>
-                            </div>
-                        </div>
-                        <div className="pricing-container-card">
-                            <div className="pricing-container-cardInfo">
-                                <h3>Master</h3>
-                                <h2>$399.99</h2>
-                                <ul className="pricing-container-features">
-                                    <hr/>
-                                    <li>2 TB Storage</li>
-                                    <hr/>
-                                    <li>10 Users Allowed</li>
-                                    <hr/>
-                                    <li>Send up to 20GB</li>
-                                </ul>
-                                <Button buttonSize='btn--wide' buttonStyle='btn--primary'>
-                                    More Info
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-            </div >);
+        </div>
+    );
 }

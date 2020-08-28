@@ -35,6 +35,7 @@
                     transform: scale(1.1);
                     background: darkblue;
                     color: white;
+                    z-index: 5;
                     &:hover {
                         transform: scale(1.11);
                     }

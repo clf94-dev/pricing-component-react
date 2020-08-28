@@ -46,6 +46,7 @@
   transform: scale(1.1);
   background: darkblue;
   color: white;
+  z-index: 5;
 }
 
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card:nth-child(2):hover {
