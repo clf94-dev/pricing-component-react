@@ -1,0 +1,52 @@
+.pricing-section {
+  padding: 5% 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-section .pricing-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 auto;
+}
+
+.pricing-section .pricing-wrapper .pricing-heading {
+  color: darkblue;
+}
+
+.pricing-section .pricing-wrapper .options {
+  font-size: 20px;
+  color: gray;
+}
+
+.pricing-section .pricing-wrapper .pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card {
+  background: white;
+  box-shadow: 0 6px 20px gray;
+  width: 300px;
+  height: 500px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card:nth-child(2) {
+  transform: scale(1.1);
+  background: darkblue;
+  color: white;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card:nth-child(2):hover {
+  transform: scale(1.11);
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card:hover {
+  transform: scale(1.06);
+  transition: all 0.3s ease-out;
+}
